@@ -3,6 +3,10 @@ import React from 'react'
 import { gsap } from "gsap";
 import Navbar from "./components/Navbar.jsx";
 import Hero from "./components/Hero.jsx";
+import Cocktails from './components/Cocktail.jsx'
+import About from './components/About.jsx'
+import Contact from "./components/Contact.jsx";
+
 gsap.registerPlugin(ScrollTrigger,SplitText);
 
 const App = () => {
@@ -10,7 +14,10 @@ const App = () => {
         <main>
             <Navbar/>
             <Hero/>
-            <div className={"h-[100vh]"}></div>
+            <Cocktails />
+            <About />
+            <Contact />
+
         </main>
     )
 }
